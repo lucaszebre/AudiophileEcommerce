@@ -1,0 +1,146 @@
+.HeroSpeakerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 3em;
+    overflow: hidden;
+    position: relative;
+}
+.HeroSpeakerPattern{
+    position: absolute;
+    top: 0;
+    left: -4rem;
+    width: 944px;
+    height: 944px;
+    z-index: 1;
+}
+.HeroSpeakerWrapper{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:  space-evenly;
+    width: 90%;
+    margin-top: 4em;
+    background-color: #D87D4A;
+    height: 560px;
+    max-width: 1440px;
+    overflow: hidden;
+    z-index: 0;
+    background-image: url('/assets/home/desktop/pattern-circles.svg')  ;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 960px;
+}
+
+.HeroSpeakerTitle{
+    width: 400px;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 0.5em;
+    text-align: start;
+}
+
+
+.HeroSpeakerDescription{
+    text-align: start;
+    width: 400px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgb(243, 243, 243);
+    margin-bottom: 1em;
+}
+.ImageWrapper{
+    width: 50%;
+    position: relative;
+}
+.HeroSpeakerButton{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 0.8em 1.3em 0.8em 1.3em;
+        font-size: 1rem;
+        
+}
+
+.HeroSpeakerImage{
+    margin-bottom: -7rem;
+    width: 410px;
+    height: 490px;
+    z-index: 10;
+    position: relative;
+}
+
+.HeroSpeakerDiv{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.HeroSpeakerText{
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+@media screen and (max-width: 1028px){
+    .HeroSpeakerWrapper{
+        flex-direction: column;
+        height: 720px;
+        margin-top: 0;
+    }
+    .HeroSpeakerImage{
+        margin-bottom: unset;
+        width: 199px;
+        height: 238px;
+    }
+    .HeroSpeakerDiv{
+        justify-content: center;
+    }
+    .HeroSpeakerTitle{
+       
+        text-align: center;
+    }
+    .HeroSpeakerDescription{
+        text-align: center;
+    }
+}
+
+
+@media  (max-width:409px) {
+
+    .HeroSpeakerWrapper{
+        flex-direction: column;
+        height: 720px;
+        margin-top: 0;
+    }
+    .HeroSpeakerImage{
+        margin-bottom: unset;
+        width: 80%;
+        height: 238px;
+    }
+    .HeroSpeakerDiv{
+        width: 100%;
+        justify-content: center;
+    }
+    .HeroSpeakerTitle{
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .HeroSpeakerDescription{
+        width: 100%;
+        text-align: center;
+    }
+    
+}
+

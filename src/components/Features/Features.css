@@ -1,0 +1,100 @@
+.FeaturesContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.FeaturesWrapper{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.FeaturesContent{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    text-align: start;
+    width:635px;
+}
+
+
+.FeaturesTitle{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.8em;
+}
+
+.FeaturesText1{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 2em;
+    color: gray;
+}
+.FeaturesText2{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: gray;
+}
+.IntheBox{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    text-align: start;
+    width: 350px;
+    height: 100%;
+}
+.IntheBoxCols{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 1.5em;
+}
+
+.IntheBoxCols span{
+    color: #D87D4A;
+    font-weight: 700;
+    margin-right: 0.5em;
+}
+
+.IntheboxText{
+    font-size:0.9rem;
+    font-weight: 400;
+    color: gray;
+}
+
+@media (max-width:1024px){
+    .FeaturesWrapper{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .FeaturesContent{
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    .IntheBox{
+        display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: flex-start;
+    text-align: start;
+    width: 100%;
+    height: 100%;
+    }
+    .IntheBoxTitle{
+        margin-right: 2em;
+    }
+    .IntheBoxCols:first-child{
+        margin-top: 0;
+    }
+}

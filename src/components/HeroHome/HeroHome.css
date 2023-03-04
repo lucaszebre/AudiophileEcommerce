@@ -1,0 +1,186 @@
+.HeroImageMobile,.HeroImageTablet {
+  display: none;
+}
+
+.HeroImageDesktop {
+position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 1440px;
+    height: 100vh;
+    max-height: 729px;
+    z-index: -1;
+}
+
+.HeroHomeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+
+}
+
+.HeroHomeWrapper{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    align-items: start;
+    width: 90%;
+   
+}
+
+.HeroHomeH2{
+    font-size: 1rem;
+    font-weight: 400;
+    color: gray;
+    text-align: center;
+    margin-bottom: 0.3em;
+    letter-spacing: 0.3em;
+}
+
+.HeroHomeH1{
+    text-align: start;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.3em;
+   width: 520px;
+}
+
+.HeroHomeDescription{
+    text-align: start;
+    font-size: 1rem;
+    font-weight: 400;
+    color: gray;
+    text-align: start;
+    margin-bottom: 1em;
+    width: 50%;
+    width: 450px;
+}
+
+.HeroHomeButton{
+    background-color: #D87D4A;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: 0.8em 1.3em 0.8em 1.3em;
+}
+
+
+@media (max-width:1024px) {
+    .HeroImageDesktop {
+        display: none;
+    }
+    .HeroImageTablet {
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        max-width: 1024px;
+        max-height: 729px;
+        z-index: -1;
+    }
+    .HeroHomeWrapper{
+        margin-top: 7em;
+        width: 90%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        max-width: 768px;
+
+    }
+    .HeroHomeH2{
+        letter-spacing: 1.2em;
+    }
+    .HeroHomeH1{
+        text-align: center;
+        font-weight: 700;
+        width: 100%;
+        font-size: 3rem;
+        width: 50%;
+        
+    }
+    .HeroHomeDescription{
+        width: 60%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .HeroHomeButton{
+        font-size: 1rem;
+        padding: 1em 1.5em 1em 1.5em;
+    }
+    
+}
+
+
+@media (max-width:768px) {
+    .HeroImageDesktop {
+        display: none;
+    }
+    .HeroImageTablet {
+        display: none;
+    }
+    .HeroImageMobile {
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 600px;
+        max-width: 768px;
+        max-height: 729px;
+        z-index: -1;
+    }
+    .HeroHomeWrapper{
+        margin-top: 6em;
+        width: 90%;
+       
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        max-width: 768px;
+
+    }
+    .HeroHomeH2{
+        letter-spacing: 1.2em;
+    }
+    .HeroHomeH1{
+        text-align: center;
+        font-weight: 700;
+        width: 300px;
+        font-size: 2.6rem;
+        
+    }
+    .HeroHomeDescription{
+        width: 300px;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .HeroHomeButton{
+        font-size: 1rem;
+        padding: 1em 1.5em 1em 1.5em;
+    }
+    
+}
+
+
+@media (max-width:319px){
+    .HeroHomeH2{
+        width: 100%;
+    }
+    .HeroHomeH1{
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    .HeroHomeDescription{
+        font-size: 0.8rem;
+        width: 100%;
+    }
+    .HeroHomeButton{
+        font-size: 0.8rem;
+        padding: 0.8em 1.3em 0.8em 1.3em;
+    }
+}

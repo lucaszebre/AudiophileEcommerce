@@ -1,0 +1,86 @@
+.EarsPhoneContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.EarsPhoneWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 320px;
+    width: 90%;
+    
+    max-width: 1440px;
+}
+
+.EarsPhoneImageD{
+    border-radius: 0.5rem;
+    width: 48%;
+    height: 320px;
+}
+
+.EarsPhoneImageT, .EarsPhoneImageM{
+    display: none;
+}
+
+.EarsPhoneText{
+    border-radius: 0.5rem;
+    background-color: #F1F1F1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    padding: 2em 0 0 3em;
+    width: 48%;
+    height: 320px;
+}
+
+.EarsPhoneText h2{
+    margin-bottom: 1em;
+}
+
+@media  (max-width: 1024px) {
+    .EarsPhoneImageD{
+        display: none;
+    }
+    .EarsPhoneImageT{
+        display: block;
+        border-radius: 0.5rem;
+        width: 48%;
+        height: 320px;
+    }
+
+}
+
+
+@media (max-width:768px) {
+    .EarsPhoneImageT{
+        display: none;
+    }
+    .EarsPhoneWrapper{
+        margin-top: 4em;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2em;
+        height: auto;
+    }
+    .EarsPhoneImageM{
+        display: block;
+        border-radius: 0.5rem;
+        width: 100%;
+        height: 320px;
+        margin-bottom: 1em;
+    }
+    .EarsPhoneText{
+        width: 100%;
+        height: 320px;
+        
+    }
+    
+}
+    

@@ -1,0 +1,173 @@
+.ModalContainer::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    height: 100%;
+    opacity: 0.5;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+
+.ModalContainer{
+    padding: 1em 6em;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    align-items: start;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.ModalWrapper{
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+}
+.Modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:377px ;
+    height: auto;
+    background-color: #fff;
+    z-index: 100;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.ModalImage{
+    width:64px;
+    height: 64px;
+    margin-right: 0.5em;
+}
+
+.ModalEnwrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ModalBlock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.ModalContent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.ModalTotal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Link{
+    width: 100%;
+    height: 100%;
+}
+
+.IconModal{
+    width:9px;
+    height: 9px;
+    cursor: pointer;
+}
+.ModalCheckout{
+    width: 100%;
+    color: white;
+    background-color: #D87D4A;
+    height: 48px;
+    border: none;
+    cursor: pointer;
+}
+
+.ModalCheckout:hover{
+    background-color: #FBAF85;
+    opacity: 0.8;
+}
+
+.ModalEnTitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ModalPriceTotal{
+    color: black;
+    font-weight: 700;
+}
+
+.TotalText{
+    color: gray;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.RemoveAll{
+    color: gray;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.RemoveAll:hover{
+    color: #D87D4A;
+}
+
+.ModalAdd{
+    width: 96px;
+    height: 32px;
+    background-color: #f2f2f2;
+    display: flex;
+        align-items: center;
+        justify-content: space-around;
+}
+
+
+@media (max-width:768px){
+    .Modal{
+        width: 100%;
+    }
+    .ModalContainer{
+        padding: 6em 2em;
+    }
+}
+
+
+@media(max-width:412px){
+
+    .Modal{
+        padding: 1em;
+    }
+    .ModalEnwrap h3{
+        font-size: 4vw;
+    }
+
+    .ModalEnwrap p{
+        font-size: 4vw;
+    }
+
+}

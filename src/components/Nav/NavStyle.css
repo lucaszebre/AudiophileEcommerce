@@ -1,0 +1,157 @@
+@media (min-width:1024px){
+
+    .MenuBackGround{
+        display: none !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.NavContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 80px;
+    width: 100%;
+    
+    background: #191919
+    
+}
+.BlockNav{
+    display: flex;
+}
+.NavLogo{
+    width: 145px;
+    height: 25px;
+}
+
+.NavList{
+    display:flex;
+    flex-direction: row;
+    margin-left: -30rem;
+
+}
+.NavHamburger1,.NavHamburger2{
+    display: none;
+}
+nav{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 80px;
+    width: 90%;
+    max-width: 1440px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.NavLink{
+    text-decoration: none;
+    color: white;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+}
+
+ul li{
+    padding: 0 20px;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.CartNav{
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+}
+.NavLogoMobile{
+    display: none;
+}
+
+.MenuBackGround{
+    
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.MenuSection{
+   display: flex;
+    background-color: white;
+    width: 100%;
+    height: 368px;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:1024px){
+    .MenuBackGround{
+        display: block;
+    }
+    .NavList{
+        display: none;
+    }
+    nav{
+        max-width: 768px;
+    }
+}
+
+@media  (min-width: 768px) and (max-width: 1024px) {
+    .NavHamburger1{
+        display: block;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        margin-right: 1em;
+    }
+    .NavList{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    
+    .NavLogoMobile{
+        display: block;
+        width: 145px;
+        height: 25px;
+        
+    }
+    .NavHamburger1{
+        display: block;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        margin-right: 1em;
+    }
+    .NavLogo{
+        display: none;
+    }
+    .MenuSection{
+        padding-top: 1em;
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 850px;
+    justify-content: center;
+    align-items: center;
+    }
+}

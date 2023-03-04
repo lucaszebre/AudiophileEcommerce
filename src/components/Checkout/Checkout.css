@@ -1,0 +1,314 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.GrandTotal .righttext{
+    color: #D87D4A;
+}
+.GrandTotal{
+    margin-top: 0.5em;
+}
+.CheckoutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5em;
+    margin-bottom: 5em;
+
+}
+.SmallLabel{
+    align-items: flex-start;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.goback2{
+    display: flex;
+    text-align: start;
+    color: gray;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.CheckoutWrapper{
+    display: flex;
+    flex-direction:row;
+    align-items: start;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.CheckoutLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    background-color: rgb(247, 246, 246);
+    width: 65%;
+    height: auto;
+    padding: 2em;
+    border-radius: 10px;
+}
+input::placeholder{
+    color: gray;
+    font-size: 0.8rem;
+    text-indent: 1em;
+}
+.CheckoutRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(247, 246, 246);
+    width: 30%;
+    height: 100%;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.ImageCart{
+    width: 64px;
+    height: 64px;
+    margin-right: 1em;
+}
+
+.CheckoutTitle{
+    display: flex;
+    justify-content: start;
+    color: black;
+    font-size: 20px;
+    text-align: start;
+    width: 100%;
+}
+
+.CheckoutRightWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin-top: 0.5em;
+}
+
+.CheckoutRightInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.CheckoutRightInfo h2{
+    font-size: 0.8rem;
+}
+
+.CheckoutRightInfo p{
+    color: gray;
+    font-size: 0.8rem;
+}
+
+.Block1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.Total,.Shipping,.Vat,.GrandTotal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0.3em;
+}
+
+.CheckoutSubmit{
+    margin-top: 0.5em;
+    width: 100%;
+    background-color: #D87D4A;
+    border: none;
+    padding: 0.5em 0 0.5em 0;
+    color: white;
+    cursor: pointer;
+}
+
+.righttext{
+   color: gray;
+}
+
+.lefttext{
+    color: black;
+    font-weight: 600;
+}
+
+.CheckoutLeft h1{
+    font-size: 1.5rem;
+    text-align: start;
+    width: 100%;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+}
+.InputTitle{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+    color: black;
+    text-align: start;
+    width: 100%;
+}
+.CheckoutLeft h2{
+    margin-top: 1em;
+    color: #D87D4A;
+    font-weight: 500;
+    text-align: start;
+    width: 100%;
+}
+
+.CheckoutRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.disabledButton{
+    opacity: 0.5;
+}
+.SmallInput{
+    width: 90%;
+    height: 56px;
+}
+
+input{
+padding: 1em;
+border-radius: 10px;
+background: transparent;
+outline: none;
+border: 1px solid gray;
+}
+.LargeLabel{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: start;
+}
+
+.LargeInput{
+    width: 95%;
+    height: 56px;
+}
+
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: 0.5em;
+}
+
+.LabelInput{
+    width: 309px;
+    height: 56px;
+    padding: 2em;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row-reverse;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-top: 1em;
+}
+
+.CheckoutBlock{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content:space-between;
+    width: 95%;
+    margin-top: 1em;
+}
+
+.Input2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.gobackPlain{
+    width: 90%;
+    display: flex;
+    align-content: start;
+}
+
+input.input-error{
+    border-color: #D87D4A;
+    border: 3px solid #D87D4A;
+}
+
+.error{
+    color: #D87D4A;
+    font-size: 0.8rem;
+    margin-top: 0.5em;
+}
+
+
+
+
+
+
+
+
+@media (max-width:1024px) {
+    .CheckoutWrapper{
+        flex-direction: column;
+    }
+    .CheckoutLeft{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 2em;
+    }
+    .CheckoutRight{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 2em;
+    }
+    .LabelInput h4{
+        font-size:1rem;
+        width: 100%;
+    }
+}
+
+@media (max-width:615px){
+    .CheckoutRow{
+        flex-direction: column;
+    }
+    .CheckoutBlock{
+        flex-direction: column;
+    }
+    input{
+        width: 100% !important;
+    }
+    label{
+        width: 100% !important;
+    }
+    .PaymentCols{
+        width: 100% !important;
+    }
+}

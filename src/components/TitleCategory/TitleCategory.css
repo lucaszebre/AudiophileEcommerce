@@ -1,0 +1,35 @@
+.TitleCategoryContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    background-color: black;
+    width: 100%;
+}
+
+.TitleCategoryWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.TitleCategoryWrapper h1{
+    color: white;
+    font-size: 2.8rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+@media (max-width: 340px) {
+    .TitleCategoryWrapper h1{
+        font-size: 1.8rem;
+        width: 100%;
+    }
+    .TitleCategoryWrapper{
+        width: 100%;
+    }
+}

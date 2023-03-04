@@ -1,0 +1,91 @@
+.DisplayImageContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.DisplayImageWrapper{
+    width: 90%;
+    height: 592px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.DisplayImageBlock{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+}
+
+.DisplayImage1D,.DisplayImage2D{
+    height: 280px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.DisplayImage3D{
+    height: 592px;
+    width: 49%;
+    border-radius: 10px;
+}
+
+.DisplayImage1T,.DisplayImage2T,.DisplayImage3T,.DisplayImage1M,.DisplayImage2M,.DisplayImage3M{
+    display: none;
+}
+
+@media (max-width:1024px){
+    .DisplayImage1D,.DisplayImage2D,.DisplayImage3D{
+        display: none;
+    }
+    .DisplayImage1T,.DisplayImage2T{
+        display: block;
+        height: 165px;
+        width: 95%;
+        border-radius: 10px;
+    }
+    .DisplayImageWrapper{
+        height: 368px;
+    }
+    .DisplayImage3T{
+        border-radius: 10px;
+        display: block;
+        height: 368px;
+    }
+}
+
+@media (max-width:600px){
+    .DisplayImage1T,.DisplayImage2T,.DisplayImage3T{
+        display: none;
+    }
+    .DisplayImage1M,.DisplayImage2M{
+        display: block;
+        height: 165px;
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 1em;
+    }
+    .DisplayImageWrapper{
+        height: 100%;
+        flex-direction: column;
+    }
+    .DisplayImage3M{
+        margin-top: 1em;
+        border-radius: 10px;
+        display: block;
+        height: 368px;
+        width: 100%;
+    }
+    .DisplayImageBlock{
+        width: 100%;
+    }
+}

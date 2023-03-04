@@ -1,0 +1,124 @@
+.BottomContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    width: 100%;
+}
+
+.BottomWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+    max-width: 1440px;
+    height: 588px;
+}
+
+.BottomImageD{
+height: 100%;
+width: 50%;
+border-radius: 5px;
+}
+
+.BottomImageT,.BottomImageM{
+    display: none;
+}
+
+.BottomText p{
+    color: gray;
+    width: 445px;
+    text-align: start;
+}
+
+.BottomText h1{
+    color: black;
+    width: 445px;
+    font-size: 3rem;
+    text-align: start;
+}
+
+.BottomText h1 span{
+    color: #D87D4A;
+}
+.BottomText{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+   
+}
+
+@media screen and (max-width:1024px) {
+    .BottomImageD{
+        display: none;
+    }
+    .BottomWrapper{
+        flex-direction: column-reverse;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .BottomImageT{
+        display: block;
+        height: 300px;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .BottomText{
+        margin-top: 2em;
+        align-content: center;
+        text-align: start;
+    }
+    .BottomText h1{
+        text-align: center;
+        width: 573px;
+    }
+    
+    .BottomText p{
+        text-align: center;
+        width: 573px;
+    }
+}
+
+
+@media  (max-width:567px) {
+    .BottomImageT{
+        display: none;
+    }
+    .BottomImageM{
+        display: block;
+        height: 300px;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .BottomText h1{
+        text-align: center;
+        width: 327px;
+        font-size: 2rem;
+    }
+    
+    .BottomText p{
+        text-align: center;
+        width: 327px;
+        font-size: 1rem;
+    }
+    
+}
+
+@media (max-width:351px){
+    .BottomText h1{
+        text-align: center;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    
+    .BottomText p{
+        text-align: center;
+        width: 100%;
+        font-size: 0.8rem;
+    }
+}

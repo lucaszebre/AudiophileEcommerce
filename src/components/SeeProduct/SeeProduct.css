@@ -1,0 +1,69 @@
+.SeeProductContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.SeeProductWrapper {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 320px;
+    width: 90%;
+    padding: 2em;
+    background-image: url("/assets/home/desktop/image-speaker-zx7.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1440px;
+}
+
+.SeeProductTitle{
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 1em;
+}
+.SeeProductButton{
+    border: #000 1px solid;
+    border-radius: 5px;
+    background: transparent;
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+.SeeProductContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+    margin-left: 2em;
+}
+
+@media  (max-width:1024px) {
+    .SeeProductWrapper{
+        background: url("/assets/home/tablet/image-speaker-zx7.jpg");
+        
+        height: 320px;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+}
+
+@media (max-width:499px) {
+    .SeeProductWrapper{
+        background: url("/assets/home/mobile/image-speaker-zx7.jpg");
+        height: 320px;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+}

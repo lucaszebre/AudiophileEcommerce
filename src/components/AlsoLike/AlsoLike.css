@@ -1,0 +1,31 @@
+.AlsoLikeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.AlsoLikeWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.AlsoLikeContainer h2{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+@media (max-width:566px){
+    .AlsoLikeWrapper{
+        flex-direction: column;
+        width: 100%;
+    }
+}

@@ -1,0 +1,142 @@
+.FooterContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #101010;
+    width: 100%;
+
+    
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 365px;
+    background-color: #101010;
+    max-width: 1440px;
+}
+.FooterLogo{
+    width: 143px;
+    height: 25px;
+}
+
+.FooterList{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.FooterBlock1,.FooterBlock2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.FooterListItem{
+    font-size: 0.9rem;
+    color: white;
+    list-style: none;
+    margin-right:0.5em;
+    text-decoration: none;
+}
+
+.FooterDescription{
+    font-size: 1rem;
+    color: gray;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 540px;
+    text-align: start;
+}
+
+.FooterSocials{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+.FooterSocialsIcon:last-child,.FooterListItem:last-child{
+    padding:0 ;
+    margin-right: 0;
+}
+
+.FooterSocialsIcon{
+    width: 25px;
+    height: 20px;
+    margin-right: 0.5em;
+}
+
+.FooterCopyrightText{
+    color: gray;
+    text-align: start;
+}
+
+.FooterCopyright{
+    margin-top: 1em;
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+}
+
+
+@media (max-width:700px){
+    .FooterBlock1,.FooterBlock2{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .FooterDescription{
+        width: 327px;
+        text-align: center;
+    }
+    .FooterCopyright{
+        margin-top: 1.5em;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .FooterList{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .FooterListItem{
+        margin-top: 1em;
+        font-weight: 400;
+       
+
+    }
+    footer{
+        height: 600px;
+    }
+    .FooterLogo{
+        margin-bottom: 1em;
+    }
+    .FooterCopyrightText{
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+}
+
+
+@media (max-width:347px){
+    .FooterDescription{
+        width: 100%;
+        text-align: center;
+    }
+    .FooterBlock1,.FooterBlock2{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}

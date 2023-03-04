@@ -1,0 +1,89 @@
+.CategoryCartContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 284px;
+    position: relative;
+    margin-right: 1.5em;
+    
+}
+
+.CategoryCartWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4em;
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    background-color: #F1F1F1;
+}
+
+.CategoryCartTitle{
+    letter-spacing: 0.2em;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 0.5em;
+}
+
+.CategoryCartImage{
+    width: 123px;
+    height: 160px;
+    position: absolute;
+    top: 0;
+}
+
+.CategoryCartRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.CategoryCartRow p{
+    margin-right: 0.5em;
+    color: gray;
+    font-weight: 500;
+}
+.CategoryCartRow p:hover{
+    color: #D87D4A;
+    cursor: pointer;
+}
+.Link{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+    font-size: 1rem;
+}
+@media screen and (max-width: 1024px){
+    .CategoryCartContainer{
+
+       
+        height: 217px;
+        margin-right: 0.8em;
+        
+    }
+    .CategoryCartWrapper{
+        height: 165px;
+        width: 100%;
+        margin-bottom: -3em;
+    }
+
+}
+
+@media  screen and (max-width: 768px){
+    .CategoryCartContainer{
+        width: 100%;
+        height: 217px;
+        margin-right: 0em;
+        margin-bottom: 4em;
+    }
+    
+}
+    
+

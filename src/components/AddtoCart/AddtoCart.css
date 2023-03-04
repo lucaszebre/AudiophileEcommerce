@@ -1,0 +1,74 @@
+.plus,.moins{
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+}
+.wrap,.wrap1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.wrap:hover,.wrap1:hover{
+    background-color: #f7f7D7;
+}
+
+.AddtoCartContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 407px;
+    height: 100%;
+}
+.AddtoCartPrice{
+    text-align: start;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #000000;
+    margin-bottom: 0.5em;
+    width: 407px;
+}
+.AddtoCartBlock{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    width: 407px;
+    height: 100%;
+}
+
+.AddtoCartRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 140.47px;
+    height: 48.92px;
+    background-color: #f1f1f1;
+    margin-right:0.5em ;
+    letter-spacing: 0.9em;
+}
+
+@media (max-width:1024px){
+    .AddtoCartBlock{
+        width: unset;
+        align-items: center;
+        justify-content: center;
+    }
+    .AddtoCartPrice{
+        text-align: center;
+    }
+}
+
+@media (max-width:325px){
+    
+.AddtoCartRow{
+
+    width: 120.47px;
+    height: 40.92px;
+}
+
+}

@@ -1,0 +1,28 @@
+.CategoryContainer{
+
+    width: 1024px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media screen and (max-width: 1024px){
+    .CategoryContainer{
+    
+        width: 768px;
+        
+    }
+}
+
+@media screen and (max-width: 768px){
+    .CategoryContainer{
+    
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+}
+    
+
